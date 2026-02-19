@@ -1,4 +1,13 @@
-for num in 1 2 4 5 6 7 8 9
-do
-echo "Number $num"
-done
+**//print week according to user input**
+echo "Enter a number: "
+read a
+case $a in
+1)echo "Monday";;
+2)echo "Tuesday";;
+3)echo "Wednesday";;
+4)echo "Thursday";;
+5)echo "Friday";;
+6)echo "Saturday";;
+7)echo "Sunday";;
+*)echo "Invalid input";;
+esac

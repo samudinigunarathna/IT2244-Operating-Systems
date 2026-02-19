@@ -1,13 +1,11 @@
-    echo "Please Enter a Number"
-    read a
-
-    echo "Please Enter the sceond Number"
-    read b
-
-    if [ $a -gt $b ]; then
-        echo " $a is the large Number"
-    elif [ $a -lt $b ]; then
-        echo " $b is the large Number"
-    elif [ $a -eq $b ]; then
-        echo "The Number is Equal"
-    fi
+**//check the user is admin or moderator**
+echo "Are you an admin (yes/no): "
+read is_admin
+echo "Are you a moderator (yes/no): "
+read is_moderator
+if [ "$is_admin" == "yes" ] || [ "$is_moderator" == "yes" ];
+then
+       echo "you have special privilages"
+else
+       echo "you have not special privilages"
+fi

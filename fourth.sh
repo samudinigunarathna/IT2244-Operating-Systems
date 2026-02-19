@@ -1,9 +1,9 @@
-echo "Please Enter a Number"
-read a
-echo "Please Enter the sceond Number"
-read b
-if [ $a -eq $b ]; then
-echo "The Number is Equal"
+**//check the user input is between 10 and 20**
+echo "Enter a number"
+read num
+if [ "$num" -ge 10 ] && [ "$num" -le 20 ];
+then
+       echo "$num is between 10 and 20."
 else
-echo "The Number is not Equal"
+       echo "$num is not between 10 and 20."
 fi
